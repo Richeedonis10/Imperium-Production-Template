@@ -1,0 +1,1176 @@
+{% extends "layouts/base.html" %} 
+{% block title %} Director Admin & Ops - Dashboard {% endblock %}
+
+<!-- Specific CSS goes HERE -->
+{% block stylesheets %}{% endblock stylesheets %} {% block content %}
+
+<!-- [ Main Content ] start -->
+<div class="pcoded-main-container">
+  <div class="pcoded-wrapper">
+    <div class="pcoded-content">
+      <div class="pcoded-inner-content">
+        <!-- [ breadcrumb ] start -->
+
+        <!-- [ breadcrumb ] end -->
+        <div class="main-body">
+          <div class="page-wrapper">
+            <!-- [ Main Content ] start -->
+            <div class="row">
+              <!--[ Monthly Production Stats ] start-->
+              <div class="col-md-6 col-xl-4">
+                <div class="card daily-sales">
+                  <div class="card-block">
+                    <h6 class="mb-4">Monthly Production Stats</h6>
+                    <div class="row d-flex align-items-center">
+                      <div class="col-9">
+                        <h3 class="f-w-300 d-flex align-items-center m-b-0">
+                          <i
+                            class="feather icon-arrow-up text-c-green f-30 m-r-10"
+                          ></i
+                          >2000
+                        </h3>
+                      </div>
+
+                      <div class="col-3 text-right">
+                        <p class="m-b-0">7%</p>
+                      </div>
+                    </div>
+                    <div class="progress m-t-30" style="height: 7px">
+                      <div
+                        class="progress-bar progress-c-theme"
+                        role="progressbar"
+                        style="width: 50%"
+                        aria-valuenow="7"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                      ></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--[ Monthly Production Stats ] end-->
+              <!--[ Monthly Expenses Stats ] starts-->
+              <div class="col-md-6 col-xl-4">
+                <div class="card Monthly-sales">
+                  <div class="card-block">
+                    <h6 class="mb-4">Monthly Expenses Stats</h6>
+                    <div class="row d-flex align-items-center">
+                      <div class="col-9">
+                        <h3 class="f-w-300 d-flex align-items-center m-b-0">
+                          <i
+                            class="feather icon-arrow-down text-c-red f-30 m-r-10"
+                          ></i
+                          >₦ 30,000,000
+                        </h3>
+                      </div>
+                      <div class="col-3 text-right">
+                        <p class="m-b-0">36%</p>
+                      </div>
+                    </div>
+                    <div class="progress m-t-30" style="height: 7px">
+                      <div
+                        class="progress-bar progress-c-theme2"
+                        role="progressbar"
+                        style="width: 35%"
+                        aria-valuenow="35"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                      ></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--[ Monthly Expenses Stats ] end-->
+              <!--[ Monthly Supply Stats ] starts-->
+              <div class="col-md-12 col-xl-4">
+                <div class="card yearly-sales">
+                  <div class="card-block">
+                    <h6 class="mb-4">Monthly Supply Stats</h6>
+                    <div class="row d-flex align-items-center">
+                      <div class="col-9">
+                        <h3 class="f-w-300 d-flex align-items-center m-b-0">
+                          <i
+                            class="feather icon-arrow-up text-c-green f-30 m-r-10"
+                          ></i
+                          >3,000 Vests
+                        </h3>
+                      </div>
+                      <div class="col-3 text-right">
+                        <p class="m-b-0">80%</p>
+                      </div>
+                    </div>
+                    <div class="progress m-t-30" style="height: 7px">
+                      <div
+                        class="progress-bar progress-c-theme"
+                        role="progressbar"
+                        style="width: 70%"
+                        aria-valuenow="70"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                      ></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--[ Monthly Supply Stats ] end-->
+              <!--[ Expense Requests ] start-->
+              <div class="col-xl-8 col-md-6">
+                <div class="card Recent-Users">
+                  <div class="card-header">
+                    <h5>Expense Requests</h5>
+                  </div>
+                  <div class="card-block px-0 py-3">
+                    <div class="table-responsive">
+                      <table class="table table-hover">
+                        <thead>
+                          <tr class="unread">
+                            <th>Requester</th>
+                            <th>Department</th>
+                            <th>Unit</th>
+                            <th>Amount</th>
+                            <th>Date</th>
+                            <th style="text-align: left">Action</th>
+                            <th>Purpose</th>
+                            <th>Status</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                              <th>
+                                <div class="form-check font-size-16" style="display: inline-block">
+                                  <input type="checkbox" class="form-check-input" id="customCheck2">
+                                  <label class="form-check-label" for="customCheck2"></label>
+                                </div>
+                                <img
+                                  class="rounded-circle"
+                                  style="width: 40px"
+                                  src="{{ config.ASSETS_ROOT }}/images/user/user.png"
+                                  alt="activity-user"
+                                />
+                                <h6 class="mb-1" style="display: inline; margin-left: 10px;"> Charles Ekulide</h6>
+                              </th>
+
+                              <td>
+                                <h6 class="mb-1" style="display: inline-block">Production</h6>
+                              </td>
+
+                              <td>
+                                Vehicles & Machines
+                              </td>
+
+                              <td>₦ 500,000</td>
+
+                              <td>
+                                <h6 class="text-muted">
+                                  <i
+                                    class="fas fa-circle text-c-green f-10 m-r-15"
+                                  ></i
+                                  >11 MAY 12:56
+                                </h6>
+                              </td>
+
+                              <td>
+                                <a
+                                  href="#!"
+                                  class="label theme-bg2 text-white f-12"
+                                  >Reject</a
+                                ><a
+                                  href="#!"
+                                  class="label theme-bg text-white f-12"
+                                  >Approve</a
+                                >
+                              </td>
+
+                              <td>Painting of Civil defence vehicle</td>
+
+                              <td>Pending</td>
+                              
+                            </tr>
+
+                            <!--row2-->
+
+                            <tr>
+                              <th>
+                                <div class="form-check font-size-16" style="display: inline-block">
+                                  <input type="checkbox" class="form-check-input" id="customCheck2">
+                                  <label class="form-check-label" for="customCheck2"></label>
+                                </div>
+                                <img
+                                  class="rounded-circle"
+                                  style="width: 40px"
+                                  src="{{ config.ASSETS_ROOT }}/images/user/user.png"
+                                  alt="activity-user"
+                                />
+                                <h6 class="mb-1" style="display: inline; margin-left: 10px;"> Charles Ekulide</h6>
+                              </th>
+
+                              <td>
+                                <h6 class="mb-1" style="display: inline-block">Production</h6>
+                              </td>
+
+                              <td>
+                                Vehicles & Machines
+                              </td>
+
+                              <td>₦ 500,000</td>
+
+                              <td>
+                                <h6 class="text-muted">
+                                  <i
+                                    class="fas fa-circle text-c-green f-10 m-r-15"
+                                  ></i
+                                  >11 MAY 12:56
+                                </h6>
+                              </td>
+
+                              <td>
+                                <a
+                                  href="#!"
+                                  class="label theme-bg2 text-white f-12"
+                                  >Reject</a
+                                ><a
+                                  href="#!"
+                                  class="label theme-bg text-white f-12"
+                                  >Approve</a
+                                >
+                              </td>
+
+                              <td>Painting of Civil defence vehicle</td>
+
+                              <td>Pending</td>
+                              
+                            </tr>
+                            
+                            <!--row3-->
+
+                            <tr>
+                              <th>
+                                <div class="form-check font-size-16" style="display: inline-block">
+                                  <input type="checkbox" class="form-check-input" id="customCheck2">
+                                  <label class="form-check-label" for="customCheck2"></label>
+                                </div>
+                                <img
+                                  class="rounded-circle"
+                                  style="width: 40px"
+                                  src="{{ config.ASSETS_ROOT }}/images/user/user.png"
+                                  alt="activity-user"
+                                />
+                                <h6 class="mb-1" style="display: inline; margin-left: 10px;"> Charles Ekulide</h6>
+                              </th>
+
+                              <td>
+                                <h6 class="mb-1" style="display: inline-block">Production</h6>
+                              </td>
+
+                              <td>
+                                Vehicles & Machines
+                              </td>
+
+                              <td>₦ 500,000</td>
+
+                              <td>
+                                <h6 class="text-muted">
+                                  <i
+                                    class="fas fa-circle text-c-green f-10 m-r-15"
+                                  ></i
+                                  >11 MAY 12:56
+                                </h6>
+                              </td>
+
+                              <td>
+                                <a
+                                  href="#!"
+                                  class="label theme-bg2 text-white f-12"
+                                  >Reject</a
+                                ><a
+                                  href="#!"
+                                  class="label theme-bg text-white f-12"
+                                  >Approve</a
+                                >
+                              </td>
+
+                              <td>Painting of Civil defence vehicle</td>
+
+                              <td>Pending</td>
+                              
+                            </tr>
+                            
+                          
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--[ Expense Requests ] end-->
+
+              <!-- [ statistics year chart ] start -->
+              <!--<div class="col-xl-4 col-md-6">
+                <div class="card card-event">
+                  <div class="card-block">
+                    <div class="row align-items-center justify-content-center">
+                      <div class="col">
+                        <h5 class="m-0">Upcoming Event</h5>
+                      </div>
+                      <div class="col-auto">
+                        <label
+                          class="label theme-bg2 text-white f-14 f-w-400 float-right"
+                          >34%</label
+                        >
+                      </div>
+                    </div>
+                    <h2 class="mt-3 f-w-300">
+                      45<sub class="text-muted f-14">Competitors</sub>
+                    </h2>
+                    <h6 class="text-muted mt-4 mb-0">
+                      You can participate in event
+                    </h6>
+                    <i class="fab fa-angellist text-c-purple f-50"></i>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-block border-bottom">
+                    <div class="row d-flex align-items-center">
+                      <div class="col-auto">
+                        <i class="feather icon-zap f-30 text-c-green"></i>
+                      </div>
+                      <div class="col">
+                        <h3 class="f-w-300">235</h3>
+                        <span class="d-block text-uppercase">TOTAL IDEAS</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-block">
+                    <div class="row d-flex align-items-center">
+                      <div class="col-auto">
+                        <i class="feather icon-map-pin f-30 text-c-blue"></i>
+                      </div>
+                      <div class="col">
+                        <h3 class="f-w-300">26</h3>
+                        <span class="d-block text-uppercase"
+                          >TOTAL LOCATIONS</span
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <! [ statistics year chart ] end -->
+              
+              <!--[production stats section] start-->
+              <div class="col-md-12 col-xl-4">
+                <div class="card card-social">
+                  <div class="card-block border-bottom">
+                    <div class="row align-items-center justify-content-center">
+                      <div class="col-auto">
+                        <image src="{{ url_for('static', filename='/assets/images/product/green helmet.png') }}" style="width:150px"/>
+                        
+                      </div>
+                      <div class="col text-right">
+                        <h3>Helmets</h3>
+                        <h5 class="text-c-green mb-0">
+                           <span class="text-muted">Army</span>
+                        </h5>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-block">
+                    <div
+                      class="row align-items-center justify-content-center card-active"
+                    >
+                      <div class="col-6">
+                        <h6 class="text-center m-b-10">
+                          <span class="text-muted m-r-5">Target:</span>5,000
+                        </h6>
+                        <div class="progress">
+                          <div
+                            class="progress-bar progress-c-theme"
+                            role="progressbar"
+                            style="width: 60%; height: 6px"
+                            aria-valuenow="60"
+                            aria-valuemin="0"
+                            aria-valuemax="100"
+                          ></div>
+                        </div>
+                      </div>
+                      <div class="col-6">
+                        <h6 class="text-center m-b-10">
+                          <span class="text-muted m-r-5">Finished:</span>2,500
+                        </h6>
+                        <div class="progress">
+                          <div
+                            class="progress-bar progress-c-theme2"
+                            role="progressbar"
+                            style="width: 45%; height: 6px"
+                            aria-valuenow="45"
+                            aria-valuemin="0"
+                            aria-valuemax="100"
+                          ></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-6 col-xl-4">
+                <div class="card card-social">
+                  <div class="card-block border-bottom">
+                    <div class="row align-items-center justify-content-center">
+                      <div class="col-auto">
+                        <image src="{{ url_for('static', filename='/assets/images/product/black vest.png') }}" style="width:123px"/>
+                      </div>
+                      <div class="col text-right">
+                        <h3>Vests</h3>
+                        <h5 class="text-c-purple mb-0">
+                          <span class="text-muted">Police vest</span>
+                        </h5>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-block">
+                    <div
+                      class="row align-items-center justify-content-center card-active"
+                    >
+                      <div class="col-6">
+                        <h6 class="text-center m-b-10">
+                          <span class="text-muted m-r-5">Target:</span>3,000
+                        </h6>
+                        <div class="progress">
+                          <div
+                            class="progress-bar progress-c-green"
+                            role="progressbar"
+                            style="width: 40%; height: 6px"
+                            aria-valuenow="40"
+                            aria-valuemin="0"
+                            aria-valuemax="100"
+                          ></div>
+                        </div>
+                      </div>
+                      <div class="col-6">
+                        <h6 class="text-center m-b-10">
+                          <span class="text-muted m-r-5">Finished:</span>2,760
+                        </h6>
+                        <div class="progress">
+                          <div
+                            class="progress-bar progress-c-blue"
+                            role="progressbar"
+                            style="width: 70%; height: 6px"
+                            aria-valuenow="70"
+                            aria-valuemin="0"
+                            aria-valuemax="100"
+                          ></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-xl-4">
+                <div class="card card-social">
+                  <div class="card-block border-bottom">
+                    <div class="row align-items-center justify-content-center">
+                      <div class="col-auto">
+                        <image src="{{ url_for('static', filename='/assets/images/product/camo vest.png') }}" style="width:133px"/>
+                      </div>
+                      <div class="col text-right">
+                        <h3>Vests</h3>
+                        <h5 class="text-c-blue mb-0">
+                          <span class="text-muted">Barrage Vests</span>
+                        </h5>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-block">
+                    <div
+                      class="row align-items-center justify-content-center card-active"
+                    >
+                      <div class="col-6">
+                        <h6 class="text-center m-b-10">
+                          <span class="text-muted m-r-5">Target:</span>10,000
+                        </h6>
+                        <div class="progress">
+                          <div
+                            class="progress-bar progress-c-theme"
+                            role="progressbar"
+                            style="width: 80%; height: 6px"
+                            aria-valuenow="80"
+                            aria-valuemin="0"
+                            aria-valuemax="100"
+                          ></div>
+                        </div>
+                      </div>
+                      <div class="col-6">
+                        <h6 class="text-center m-b-10">
+                          <span class="text-muted m-r-5">Finished:</span>2,000
+                        </h6>
+                        <div class="progress">
+                          <div
+                            class="progress-bar progress-c-theme2"
+                            role="progressbar"
+                            style="width: 50%; height: 6px"
+                            aria-valuenow="50"
+                            aria-valuemin="0"
+                            aria-valuemax="100"
+                          ></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!--Strikeface-->
+              <div class="col-md-12 col-xl-4">
+                <div class="card card-social">
+                  <div class="card-block border-bottom">
+                    <div class="row align-items-center justify-content-center">
+                      <div class="col-auto">
+                        <image src="{{ url_for('static', filename='/assets/images/product/strikeface.png') }}" style="width:150px"/>
+                        
+                      </div>
+                      <div class="col text-right">
+                        <h3>Strikeface</h3>
+                        <h5 class="text-c-green mb-0">
+                           <span class="text-muted">Finished</span>
+                        </h5>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-block">
+                    <div
+                      class="row align-items-center justify-content-center card-active"
+                    >
+                      <div class="col-6">
+                        <h6 class="text-center m-b-10">
+                          <span class="text-muted m-r-5">Target:</span>5,000
+                        </h6>
+                        <div class="progress">
+                          <div
+                            class="progress-bar progress-c-theme"
+                            role="progressbar"
+                            style="width: 60%; height: 6px"
+                            aria-valuenow="60"
+                            aria-valuemin="0"
+                            aria-valuemax="100"
+                          ></div>
+                        </div>
+                      </div>
+                      <div class="col-6">
+                        <h6 class="text-center m-b-10">
+                          <span class="text-muted m-r-5">Finished:</span>4,000
+                        </h6>
+                        <div class="progress">
+                          <div
+                            class="progress-bar progress-c-theme2"
+                            role="progressbar"
+                            style="width: 45%; height: 6px"
+                            aria-valuenow="45"
+                            aria-valuemin="0"
+                            aria-valuemax="100"
+                          ></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!--Vehicle-->
+              <div class="col-md-12 col-xl-4">
+                <div class="card card-social">
+                  <div class="card-block border-bottom">
+                    <div class="row align-items-center justify-content-center">
+                      <div class="col-auto" style="display: inline">
+                        <image src="{{ url_for('static', filename='/assets/images/product/vehicle.png') }}" style="width:199px; height: 150px"/>
+                        
+                      </div>
+                      <div class="col text-right" style="display: inline">
+                        <h3>Vehicles</h3>
+                        <h5 class="text-c-green mb-0">
+                           <span class="text-muted">Buffalo</span>
+                        </h5>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-block">
+                    <div
+                      class="row align-items-center justify-content-center card-active"
+                    >
+                      <div class="col-6">
+                        <h6 class="text-center m-b-10">
+                          <span class="text-muted m-r-5">Target:</span>1
+                        </h6>
+                        <div class="progress">
+                          <div
+                            class="progress-bar progress-c-theme"
+                            role="progressbar"
+                            style="width: 60%; height: 6px"
+                            aria-valuenow="60"
+                            aria-valuemin="0"
+                            aria-valuemax="100"
+                          ></div>
+                        </div>
+                      </div>
+                      <div class="col-6">
+                        <h6 class="text-center m-b-10">
+                          <span class="text-muted m-r-5">Status:</span>Finished
+                        </h6>
+                        <div class="progress">
+                          <div
+                            class="progress-bar progress-c-theme2"
+                            role="progressbar"
+                            style="width: 45%; height: 6px"
+                            aria-valuenow="45"
+                            aria-valuemin="0"
+                            aria-valuemax="100"
+                          ></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--[Production stats section] end-->
+
+
+              <!-- [ rating list ] starts-->
+              <!--<div class="col-xl-4 col-md-6">
+                <div class="card user-list">
+                  <div class="card-header">
+                    <h5>Rating</h5>
+                  </div>
+                  <div class="card-block">
+                    <div
+                      class="row align-items-center justify-content-center m-b-20"
+                    >
+                      <div class="col-6">
+                        <h2
+                          class="f-w-300 d-flex align-items-center float-left m-0"
+                        >
+                          4.7
+                          <i class="fas fa-star f-10 m-l-10 text-c-yellow"></i>
+                        </h2>
+                      </div>
+                      <div class="col-6">
+                        <h6 class="d-flex align-items-center float-right m-0">
+                          0.4
+                          <i
+                            class="fas fa-caret-up text-c-green f-22 m-l-10"
+                          ></i>
+                        </h6>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-xl-12">
+                        <h6 class="align-items-center float-left">
+                          <i class="fas fa-star f-10 m-r-10 text-c-yellow"></i>5
+                        </h6>
+                        <h6 class="align-items-center float-right">384</h6>
+                        <div class="progress m-t-30 m-b-20" style="height: 6px">
+                          <div
+                            class="progress-bar progress-c-theme"
+                            role="progressbar"
+                            style="width: 70%"
+                            aria-valuenow="70"
+                            aria-valuemin="0"
+                            aria-valuemax="100"
+                          ></div>
+                        </div>
+                      </div>
+                      <div class="col-xl-12">
+                        <h6 class="align-items-center float-left">
+                          <i class="fas fa-star f-10 m-r-10 text-c-yellow"></i>4
+                        </h6>
+                        <h6 class="align-items-center float-right">145</h6>
+                        <div class="progress m-t-30 m-b-20" style="height: 6px">
+                          <div
+                            class="progress-bar progress-c-theme"
+                            role="progressbar"
+                            style="width: 35%"
+                            aria-valuenow="35"
+                            aria-valuemin="0"
+                            aria-valuemax="100"
+                          ></div>
+                        </div>
+                      </div>
+                      <div class="col-xl-12">
+                        <h6 class="align-items-center float-left">
+                          <i class="fas fa-star f-10 m-r-10 text-c-yellow"></i>3
+                        </h6>
+                        <h6 class="align-items-center float-right">24</h6>
+                        <div class="progress m-t-30 m-b-20" style="height: 6px">
+                          <div
+                            class="progress-bar progress-c-theme"
+                            role="progressbar"
+                            style="width: 25%"
+                            aria-valuenow="25"
+                            aria-valuemin="0"
+                            aria-valuemax="100"
+                          ></div>
+                        </div>
+                      </div>
+                      <div class="col-xl-12">
+                        <h6 class="align-items-center float-left">
+                          <i class="fas fa-star f-10 m-r-10 text-c-yellow"></i>2
+                        </h6>
+                        <h6 class="align-items-center float-right">1</h6>
+                        <div class="progress m-t-30 m-b-20" style="height: 6px">
+                          <div
+                            class="progress-bar progress-c-theme"
+                            role="progressbar"
+                            style="width: 10%"
+                            aria-valuenow="10"
+                            aria-valuemin="0"
+                            aria-valuemax="100"
+                          ></div>
+                        </div>
+                      </div>
+                      <div class="col-xl-12">
+                        <h6 class="align-items-center float-left">
+                          <i class="fas fa-star f-10 m-r-10 text-c-yellow"></i>1
+                        </h6>
+                        <h6 class="align-items-center float-right">0</h6>
+                        <div class="progress m-t-30 m-b-20" style="height: 6px">
+                          <div
+                            class="progress-bar"
+                            role="progressbar"
+                            style="width: 0"
+                            aria-valuenow="0"
+                            aria-valuemin="0"
+                            aria-valuemax="100"
+                          ></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>-->
+               
+              <!-- [ rating list ] end-->
+
+
+              <!--Reportage start-->
+              <div class="col-xl-8 col-md-12 m-b-30">
+                
+                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                  
+                  <li class="nav-item">
+                    <a
+                      class="nav-link"
+                      id="home-tab"
+                      data-toggle="tab"
+                      href="#home"
+                      role="tab"
+                      aria-controls="home"
+                      aria-selected="false"
+                      >Today</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link active show"
+                      id="profile-tab"
+                      data-toggle="tab"
+                      href="#profile"
+                      role="tab"
+                      aria-controls="profile"
+                      aria-selected="true"
+                      >This Week</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link"
+                      id="contact-tab"
+                      data-toggle="tab"
+                      href="#contact"
+                      role="tab"
+                      aria-controls="contact"
+                      aria-selected="false"
+                      >All</a
+                    >
+                  </li>
+                </ul>
+
+                <div class="tab-content" id="myTabContent" style="overflow-x: auto;">
+                  <div
+                    class="tab-pane fade"
+                    id="home"
+                    role="tabpanel"
+                    aria-labelledby="home-tab">
+                    <h5 style="text-align: left; margin-bottom: 20px">Reportage</h5>
+                    <table class="table table-hover" >
+                      <thead>
+                        <tr>
+                          <th>User</th>
+                          <th>Activity</th>
+                          <th>Time</th>
+                          <th>Status</th>
+                          <th>Urgency</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <th>
+                            <h6 class="m-0">
+                              <img
+                                class="rounded-circle m-r-10"
+                                style="width: 40px"
+                                src="{{ config.ASSETS_ROOT }}/images/user/user.png"
+                                alt="activity-user"
+                              />Richard Augustus
+                            </h6>
+                          </th>
+                          <td>
+                            <h6 class="m-0">uiafjlihjklegepruighuierwhjkngknkndbfbfrfurhufg</h6>
+                          </td>
+                          <td>
+                            <h6 class="m-0">3:28 PM</h6>
+                          </td>
+                          <td>
+                            <h6 class="m-0 text-c-green">Pending</h6>
+                          </td>
+                          <td style="text-align:center">
+                            <i class="fas fa-circle text-c-green f-10"></i>
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <th>
+                            <h6 class="m-0">
+                              <img
+                                class="rounded-circle m-r-10"
+                                style="width: 40px"
+                                src="{{ config.ASSETS_ROOT }}/images/user/user.png"
+                                alt="activity-user"
+                              />Richard Augustus
+                            </h6>
+                          </th>
+                          <td>
+                            <h6 class="m-0">uiafjlihjklegepruighuierwhjkngknkndbfbfrfurhufg</h6>
+                          </td>
+                          <td>
+                            <h6 class="m-0">3:28 PM</h6>
+                          </td>
+                          <td>
+                            <h6 class="m-0 text-c-green">Pending</h6>
+                          </td>
+                          <td style="text-align:center">
+                            <i class="fas fa-circle text-c-green f-10"></i>
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <th>
+                            <h6 class="m-0">
+                              <img
+                                class="rounded-circle m-r-10"
+                                style="width: 40px"
+                                src="{{ config.ASSETS_ROOT }}/images/user/user.png"
+                                alt="activity-user"
+                              />Richard Augustus
+                            </h6>
+                          </th>
+                          <td>
+                            <h6 class="m-0">uiafjlihjklegepruighuierwhjkngknkndbfbfrfurhufg</h6>
+                          </td>
+                          <td>
+                            <h6 class="m-0">3:28 PM</h6>
+                          </td>
+                          <td>
+                            <h6 class="m-0 text-c-green">Pending</h6>
+                          </td>
+                          <td style="text-align:center">
+                            <i class="fas fa-circle text-c-green f-10"></i>
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <th>
+                            <h6 class="m-0">
+                              <img
+                                class="rounded-circle m-r-10"
+                                style="width: 40px"
+                                src="{{ config.ASSETS_ROOT }}/images/user/user.png"
+                                alt="activity-user"
+                              />Richard Augustus
+                            </h6>
+                          </th>
+                          <td>
+                            <h6 class="m-0">uiafjlihjklegepruighuierwhjkngknkndbfbfrfurhufg</h6>
+                          </td>
+                          <td>
+                            <h6 class="m-0">3:28 PM</h6>
+                          </td>
+                          <td>
+                            <h6 class="m-0 text-c-green">Pending</h6>
+                          </td>
+                          <td style="text-align:center">
+                            <i class="fas fa-circle text-c-green f-10"></i>
+                          </td>
+                        </tr>
+                        
+                      </tbody>
+                    </table>
+                  </div>
+                  <div
+                    class="tab-pane fade active show"
+                    id="profile"
+                    role="tabpanel"
+                    aria-labelledby="profile-tab"
+                  >
+                  <h5 style="text-align: left; margin-bottom: 20px">Reportage</h5>
+                    <table class="table table-hover">
+                      <thead>
+                        <tr>
+                          <th>User</th>
+                          <th>Activity</th>
+                          <th>Time</th>
+                          <th>Status</th>
+                          <th>Urgency</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <th>
+                            <h6 class="m-0">
+                              <img
+                                class="rounded-circle m-r-10"
+                                style="width: 40px"
+                                src="{{ config.ASSETS_ROOT }}/images/user/user.png"
+                                alt="activity-user"
+                              />Richard Augustus
+                            </h6>
+                          </th>
+                          <td>
+                            <h6 class="m-0">uiafjlihjklegepruighuierwhjkngknkndbfbfrfurhufg</h6>
+                          </td>
+                          <td>
+                            <h6 class="m-0">3:28 PM</h6>
+                          </td>
+                          <td>
+                            <h6 class="m-0 text-c-green">Pending</h6>
+                          </td>
+                          <td style="text-align:center">
+                            <i class="fas fa-circle text-c-green f-10"></i>
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <th>
+                            <h6 class="m-0">
+                              <img
+                                class="rounded-circle m-r-10"
+                                style="width: 40px"
+                                src="{{ config.ASSETS_ROOT }}/images/user/user.png"
+                                alt="activity-user"
+                              />Richard Augustus
+                            </h6>
+                          </th>
+                          <td>
+                            <h6 class="m-0">uiafjlihjklegepruighuierwhjkngknkndbfbfrfurhufg</h6>
+                          </td>
+                          <td>
+                            <h6 class="m-0">3:28 PM</h6>
+                          </td>
+                          <td>
+                            <h6 class="m-0 text-c-green">Pending</h6>
+                          </td>
+                          <td style="text-align:center">
+                            <i class="fas fa-circle text-c-green f-10"></i>
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <th>
+                            <h6 class="m-0">
+                              <img
+                                class="rounded-circle m-r-10"
+                                style="width: 40px"
+                                src="{{ config.ASSETS_ROOT }}/images/user/user.png"
+                                alt="activity-user"
+                              />Richard Augustus
+                            </h6>
+                          </th>
+                          <td>
+                            <h6 class="m-0">uiafjlihjklegepruighuierwhjkngknkndbfbfrfurhufg</h6>
+                          </td>
+                          <td>
+                            <h6 class="m-0">3:28 PM</h6>
+                          </td>
+                          <td>
+                            <h6 class="m-0 text-c-green">Pending</h6>
+                          </td>
+                          <td style="text-align:center">
+                            <i class="fas fa-circle text-c-green f-10"></i>
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <th>
+                            <h6 class="m-0">
+                              <img
+                                class="rounded-circle m-r-10"
+                                style="width: 40px"
+                                src="{{ config.ASSETS_ROOT }}/images/user/user.png"
+                                alt="activity-user"
+                              />Richard Augustus
+                            </h6>
+                          </th>
+                          <td>
+                            <h6 class="m-0">uiafjlihjklegepruighuierwhjkngknkndbfbfrfurhufg</h6>
+                          </td>
+                          <td>
+                            <h6 class="m-0">3:28 PM</h6>
+                          </td>
+                          <td>
+                            <h6 class="m-0 text-c-green">Pending</h6>
+                          </td>
+                          <td style="text-align:center">
+                            <i class="fas fa-circle text-c-green f-10"></i>
+                          </td>
+                        </tr>
+
+                      </tbody>
+                    </table>
+                  </div>
+                  <div
+                    class="tab-pane fade"
+                    id="contact"
+                    role="tabpanel"
+                    aria-labelledby="contact-tab"
+                  >
+                  <h5 style="text-align: left; margin-bottom: 20px">Reportage</h5>
+                    <table class="table table-hover">
+                      <thead>
+                        <tr>
+                          <th>User</th>
+                          <th>Activity</th>
+                          <th>Time</th>
+                          <th>Status</th>
+                          <th>Urgency</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <th>
+                            <h6 class="m-0">
+                              <img
+                                class="rounded-circle m-r-10"
+                                style="width: 40px"
+                                src="{{ config.ASSETS_ROOT }}/images/user/user.png"
+                                alt="activity-user"
+                              />Richard Augustus
+                            </h6>
+                          </th>
+                          <td>
+                            <h6 class="m-0">uiafjlihjklegepruighuierwhjkngknkndbfbfrfurhufg</h6>
+                          </td>
+                          <td>
+                            <h6 class="m-0">3:28 PM</h6>
+                          </td>
+                          <td>
+                            <h6 class="m-0 text-c-green">Pending</h6>
+                          </td>
+                          <td style="text-align:center">
+                            <i class="fas fa-circle text-c-green f-10"></i>
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <th>
+                            <h6 class="m-0">
+                              <img
+                                class="rounded-circle m-r-10"
+                                style="width: 40px"
+                                src="{{ config.ASSETS_ROOT }}/images/user/user.png"
+                                alt="activity-user"
+                              />Richard Augustus
+                            </h6>
+                          </th>
+                          <td>
+                            <h6 class="m-0">uiafjlihjklegepruighuierwhjkngknkndbfbfrfurhufg</h6>
+                          </td>
+                          <td>
+                            <h6 class="m-0">3:28 PM</h6>
+                          </td>
+                          <td>
+                            <h6 class="m-0 text-c-green">Pending</h6>
+                          </td>
+                          <td style="text-align:center">
+                            <i class="fas fa-circle text-c-green f-10"></i>
+                          </td>
+                        </tr>
+
+                       <tr>
+                          <th>
+                            <h6 class="m-0">
+                              <img
+                                class="rounded-circle m-r-10"
+                                style="width: 40px"
+                                src="{{ config.ASSETS_ROOT }}/images/user/user.png"
+                                alt="activity-user"
+                              />Richard Augustus
+                            </h6>
+                          </th>
+                          <td>
+                            <h6 class="m-0">uiafjlihjklegepruighuierwhjkngknkndbfbfrfurhufg</h6>
+                          </td>
+                          <td>
+                            <h6 class="m-0">3:28 PM</h6>
+                          </td>
+                          <td>
+                            <h6 class="m-0 text-c-green">Pending</h6>
+                          </td>
+                          <td style="text-align:center">
+                            <i class="fas fa-circle text-c-green f-10"></i>
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <th>
+                            <h6 class="m-0">
+                              <img
+                                class="rounded-circle m-r-10"
+                                style="width: 40px"
+                                src="{{ config.ASSETS_ROOT }}/images/user/user.png"
+                                alt="activity-user"
+                              />Richard Augustus
+                            </h6>
+                          </th>
+                          <td>
+                            <h6 class="m-0">uiafjlihjklegepruighuierwhjkngknkndbfbfrfurhufg</h6>
+                          </td>
+                          <td>
+                            <h6 class="m-0">3:28 PM</h6>
+                          </td>
+                          <td>
+                            <h6 class="m-0 text-c-green">Pending</h6>
+                          </td>
+                          <td style="text-align:center">
+                            <i class="fas fa-circle text-c-green f-10"></i>
+                          </td>
+                        </tr>
+
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- [ Main Content ] end -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- [ Main Content ] end -->
+
+{% endblock content %}
+
+<!-- Specific Page JS goes HERE  -->
+{% block javascripts %}{% endblock javascripts %}
